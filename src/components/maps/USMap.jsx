@@ -51,7 +51,10 @@ function USMap({ employees }) {
       style={{ height: "600px", width: "100%", borderRadius: "20px" }}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
+  <CircleMarker center={[33.6844,73.0479]} pathOptions={{fillColor:   "#fd890d",
+            color:       "#ffffff",
+            fillOpacity: 0.7,
+            weight:      2,}}></CircleMarker>
       {mapData.map((loc, index) => (
         <CircleMarker
           key={index}
@@ -64,6 +67,7 @@ function USMap({ employees }) {
             weight:      2,
           }}
         >
+       
           <Popup>
             <div style={{ minWidth: 140 }}>
               <h6 className="mb-1">{loc.state}</h6>
@@ -71,7 +75,10 @@ function USMap({ employees }) {
             </div>
           </Popup>
         </CircleMarker>
+        
+      
       ))}
+    
     </MapContainer>
   );
 }
