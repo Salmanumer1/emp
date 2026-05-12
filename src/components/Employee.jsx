@@ -218,7 +218,7 @@ function Employee({ onEmployeeAdded }) {
                     {loading ? (
                       <><span className="spinner-border spinner-border-sm me-2" />Saving…</>
                     ) : (
-                      "💾 Save Employee"
+                      " Save Employee"
                     )}
                   </button>
                 </div>
