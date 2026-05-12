@@ -5,7 +5,7 @@ import RaceChart from "../components/charts/RaceChart";
 import HireChart from "../components/charts/HireChart";
 import LocationPie from "../components/charts/LocationPie";
 import USMap from "../components/maps/USMap";
-import practice from "./charts/practice";
+
 
 function Dashboard() {
 
