@@ -55,6 +55,7 @@ function USMap({ employees }) {
             color:       "#ffffff",
             fillOpacity: 0.7,
             weight:      2,}}></CircleMarker>
+            <CircleMarker center={[33.6784,70.8567]} pathOptions={{fillColor:"red",color:"blue",weight:2}}></CircleMarker>
       {mapData.map((loc, index) => (
         <CircleMarker
           key={index}
